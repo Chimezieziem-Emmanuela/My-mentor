@@ -1,0 +1,47 @@
+.section {
+	background-color: darkblue;
+	color: white;
+}
+
+.myDiv {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.col-md-6 {
+	line-height: 2rem;
+	text-align: center;
+	align-items: center;
+}
+
+.line {
+	height: 5px;
+	width: 6rem;
+	background-color: white;
+	margin: auto;
+}
+
+.text-changing:before {
+	content: '';
+	animation: change2 10s infinite;
+}
+
+@keyframes change2 {
+	25% {
+		content: 'Mentor';
+	}
+
+	50% {
+		content: 'Guardian';
+	}
+
+	75% {
+		content: 'Hero';
+	}
+
+	100% {
+		content: 'Inspiration';
+	}
+}
